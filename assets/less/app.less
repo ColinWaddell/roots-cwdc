@@ -9,10 +9,31 @@
    ========================================================================== */
 
 body { 
-  background: url('../img/beard.svg');
-  background-repeat: no-repeat;
-  background-size: 20%;
+
 }
+
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+
+
+.center.navbar .nav,
+.center.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.center .navbar-inner {
+  text-align:center;
+}
+
+.center .dropdown-menu {
+  text-align: left;
+}
+
 
 
 
@@ -20,7 +41,10 @@ body {
    Header
    ========================================================================== */
 
-.banner { }
+.banner {
+  font-size: 32px;
+  margin-bottom: 0;
+}
 
 
 
@@ -40,6 +64,45 @@ body {
 
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
+
+
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+#mybrand{
+  background-color: @blue-light;
+
+  h1{
+    font-size: 80px;
+  }
+
+  h2{
+    font-size: 60px;
+    color: @blue-dark;
+  }
+}
+
+#home-blurb{
+  background-color: @blue-light;
+}
+
+#link-bar{
+  background-color: #fff;
+}
+
+#websites{
+  background-color: @yellow-light;
+}
+
+#projects{
+  background-color: @green-light;
+}
+
+#contact{
+
+}
 
 
 
