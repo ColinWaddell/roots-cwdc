@@ -5,7 +5,7 @@ var ExampleSite = {
   // All pages
   common: {
     init: function() {
-      // JS here
+      $('.link-icon').tooltip({placement: 'bottom'});
     },
     finalize: function() { }
   },

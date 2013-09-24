@@ -24,7 +24,7 @@
 <div id="mybrand">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="<?php echo roots_main_class(); ?>">
         <h1><?php bloginfo('name'); ?></h1>
         <h2><?php bloginfo('description'); ?></h2>
       </div>

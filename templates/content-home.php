@@ -5,7 +5,7 @@
   <div class="container">
     <?php while (have_posts()) : the_post(); ?>
       <div class="row">
-        <div class="col-xs-12">
+        <div class="<?php echo roots_main_class(); ?>">
           <?php the_content(); ?>
         </div>  
       </div>
@@ -20,33 +20,33 @@
 <section id="link-bar">
   <div class="container">
     <div class="row">
-      <div class="col-sm-2">
-        <a class="link-icon" href="">
-          <img src="<?php echo site_url('/assets/img/instagram.svg'); ?>" alt="">
-        </a>
-      </div>
-      <div class="col-sm-2">
-        <a class="link-icon" href="">
+      <div class="col-xs-2">
+        <a class="link-icon" href="" data-toggle="tooltip" title="facebook">
           <img src="<?php echo site_url('/assets/img/facebook.svg'); ?>" alt="">
         </a>
       </div>
-      <div class="col-sm-2">
-        <a class="link-icon" href="">
+      <div class="col-xs-2">
+        <a class="link-icon" href="" data-toggle="tooltip" title="facebook">
+          <img src="<?php echo site_url('/assets/img/facebook.svg'); ?>" alt="">
+        </a>
+      </div>
+      <div class="col-xs-2">
+        <a class="link-icon" href="" data-toggle="tooltip" title="twitter">
           <img src="<?php echo site_url('/assets/img/twitter.svg'); ?>" alt="">
           </a>
       </div>
-      <div class="col-sm-2">
-        <a class="link-icon" href="">
+      <div class="col-xs-2">
+        <a class="link-icon" href="" data-toggle="tooltip" title="google+">
           <img src="<?php echo site_url('/assets/img/google-plus.svg'); ?>" alt="">
         </a>
       </div>
-      <div class="col-sm-2">
-        <a class="link-icon" href="">
+      <div class="col-xs-2">
+        <a class="link-icon" href="" data-toggle="tooltip" title="github">
           <img src="<?php echo site_url('/assets/img/github.svg'); ?>" alt="">
         </a>
       </div>
-      <div class="col-sm-2">
-        <a class="link-icon" href="">
+      <div class="col-xs-2">
+        <a class="link-icon" href="" data-toggle="tooltip" title="instagram">
           <img src="<?php echo site_url('/assets/img/instagram.svg'); ?>" alt="">
         </a>
       </div>
@@ -63,7 +63,7 @@
 <section id="websites">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="<?php echo roots_main_class(); ?>">
         <h1>websites</h1>
       </div>
     </div>
@@ -79,7 +79,7 @@
 <section id="projects">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="<?php echo roots_main_class(); ?>">
         <h1>projects</h1>
       </div>
     </div>
@@ -97,24 +97,13 @@
 <section id="contact">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="<?php echo roots_main_class(); ?>">
         <h1>contact</h1>
       </div>
     </div>
   </div>
 </section> <!-- contact -->
 
-
-
-
-
-
-
-
-
-<aside id="beard">
-
-</aside> <!-- beard -->
 
 
 

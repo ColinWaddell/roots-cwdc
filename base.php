@@ -13,23 +13,26 @@
     }
   ?>
 
-  <div class="wrap" role="document">
     <?php if (is_front_page()) : ?>
-
-      <div class="main" role="main">
-        <?php include roots_template_path(); ?>
-      </div><!-- /.main -->
-
-    <?php else: ?>
-      <div class="content row">
-        <div class="main <?php echo roots_main_class(); ?>" role="main">
+      <div class="wrap" role="document">
+        <div class="main" role="main">
           <?php include roots_template_path(); ?>
         </div><!-- /.main -->
-        <?php if (roots_display_sidebar()) : ?>
-          <aside class="sidebar <?php echo roots_sidebar_class(); ?>" role="complementary">
-            <?php include roots_sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
+      </div>
+
+    <?php else: ?>
+
+      <div class="wrap container" role="document">
+        <div class="content row">
+          <div class="main <?php echo roots_main_class(); ?>" role="main">
+            <?php include roots_template_path(); ?>
+          </div><!-- /.main -->
+          <?php if (roots_display_sidebar()) : ?>
+            <aside class="sidebar <?php echo roots_sidebar_class(); ?>" role="complementary">
+              <?php include roots_sidebar_path(); ?>
+            </aside><!-- /.sidebar -->
+          <?php endif; ?>
+        </div><!-- /.content -->
       </div>
 
     <?php endif; ?>
