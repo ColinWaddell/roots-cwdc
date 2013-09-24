@@ -17,8 +17,8 @@ body {
    ========================================================================== */
 
 
-.center.navbar .nav,
-.center.navbar .nav > li {
+.aligned.navbar .nav,
+.aligned.navbar .nav > li {
   float:none;
   display:inline-block;
   *display:inline; /* ie7 fix */
@@ -26,11 +26,11 @@ body {
   vertical-align: top;
 }
 
-.center .navbar-inner {
-  text-align:center;
+.aligned .navbar-inner {
+  text-align:right;
 }
 
-.center .dropdown-menu {
+.aligned .dropdown-menu {
   text-align: left;
 }
 
@@ -76,16 +76,21 @@ body {
 
   h1{
     font-size: 80px;
+    text-transform: lowercase;
+    margin-bottom: 0;
   }
 
   h2{
     font-size: 60px;
     color: @blue-dark;
+    text-transform: lowercase;
+    margin-top: 0;
   }
 }
 
 #home-blurb{
   background-color: @blue-light;
+  padding-bottom: 40px;
 }
 
 #link-bar{
@@ -94,10 +99,12 @@ body {
 
 #websites{
   background-color: @yellow-light;
+  padding-bottom: 40px;
 }
 
 #projects{
   background-color: @green-light;
+  padding-bottom: 40px;
 }
 
 #contact{
@@ -155,3 +162,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 @media (min-width: @screen-md) { }
 
 @media (min-width: @screen-lg) { }
+
+
+#wpadminbar { display: none; }
+html { margin-top: 0 !important};

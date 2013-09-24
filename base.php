@@ -14,14 +14,13 @@
   ?>
 
   <div class="wrap" role="document">
-    <?php if (is_home()) : ?>
+    <?php if (is_front_page()) : ?>
 
-      <div class="main <?php echo roots_main_class(); ?>" role="main">
+      <div class="main" role="main">
         <?php include roots_template_path(); ?>
       </div><!-- /.main -->
 
     <?php else: ?>
-
       <div class="content row">
         <div class="main <?php echo roots_main_class(); ?>" role="main">
           <?php include roots_template_path(); ?>

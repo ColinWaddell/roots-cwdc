@@ -1,6 +1,6 @@
-<header class="banner navbar navbar-default navbar-static-top center" role="banner">
+<header class="banner navbar navbar-default navbar-fixed-top aligned" role="banner">
   <div class="navbar-inner">
-    <div class="container center">
+    <div class="container aligned">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
