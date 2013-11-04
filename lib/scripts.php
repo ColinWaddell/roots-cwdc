@@ -11,7 +11,9 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function roots_scripts() {
-  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, 'c73b93bdfe644f783eabe361090b4034');
+  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '9ccaac113ad976e97ad167e9adbfd949');
+  wp_enqueue_style('nv_d3_css', get_template_directory_uri() . '/assets/js/plugins/github-calendar/css/nv.d3.css');
+  wp_enqueue_style('gitgraph_css', get_template_directory_uri() . '/assets/js/plugins/github-calendar/css/github-calendar.css');
 
   // jQuery is loaded using the same method from HTML5 Boilerplate:
   // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
@@ -28,6 +30,8 @@ function roots_scripts() {
 
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, null, false);
   wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', false, 'fb5ff4138270deef059e0311427e8d46', true);
+  wp_register_script('git-graphs', get_template_directory_uri() . '/assets/js/plugins/github-calendar/js/github-graphs-repos.js', false, false, false);
+  wp_register_script('nvd3-libs', get_template_directory_uri() . '/assets/js/plugins/github-calendar/js/nvd3.libs.js', false, false, false);
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('roots_scripts');

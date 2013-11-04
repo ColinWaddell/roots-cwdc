@@ -1,0 +1,3 @@
+[submodule "assets/js/plugins/github-calendar"]
+	path = assets/js/plugins/github-calendar
+	url = git@github.com:ColinWaddell/Github-Calendar.git

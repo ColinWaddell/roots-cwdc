@@ -5,7 +5,7 @@
   <div class="container">
     <?php while (have_posts()) : the_post(); ?>
       <div class="row">
-        <div class="<?php echo roots_main_class(); ?>">
+        <div class="col-sm-6">
           <?php the_content(); ?>
         </div>  
       </div>
@@ -81,6 +81,18 @@
     <div class="row">
       <div class="<?php echo roots_main_class(); ?>">
         <h1>projects</h1>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="my-github-projects"></div>
+        <?php wp_enqueue_script('nvd3-libs'); wp_enqueue_script('git-graphs'); ?>
+        <script>
+          $(document).ready(function() {
+            gitFancyRepos('#my-github-projects');
+          }); 
+        </script>
       </div>
     </div>
   </div>

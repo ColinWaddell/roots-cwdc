@@ -24,9 +24,11 @@
 <div id="mybrand">
   <div class="container">
     <div class="row">
-      <div class="<?php echo roots_main_class(); ?>">
+      <div class="col-sm-6">
         <h1><?php bloginfo('name'); ?></h1>
         <h2><?php bloginfo('description'); ?></h2>
+      </div>
+      <div class="col-sm-6">
       </div>
     </div>
   </div>
