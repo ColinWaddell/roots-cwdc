@@ -12,30 +12,58 @@
       </div>
 
 
-
       <div class="row">
-        <div class="col-sm-6">
-          <div class="row">
-             <section id="contact">
-              <div class="container">
-                <div class="row">
-                  <div class="<?php echo roots_main_class(); ?>">
-                    <h1>contact</h1>
-                  </div>
-                </div>
-              </div>
-            </section> <!-- contact -->
-          </div>
-        </div>  
-
-
-
-        <div class="col-sm-6">
-          <section id="websites">
+        <div class="col-sm-4">
+          <section id="contact">
             <div class="container">
               <div class="row">
                 <div class="<?php echo roots_main_class(); ?>">
                   <h1>websites</h1>
+
+                    <nav>
+                      <?php
+                        if (has_nav_menu('contact_navigation')) :
+                          wp_nav_menu(array('theme_location' => 'contact_navigation', 'before' => '&nbgt;&nbgt;&lt;' ));
+                        endif;
+                      ?>
+                    </nav>
+
+                </div>
+              </div>
+            </div>
+          </section> <!-- websites -->
+        </div>   
+
+
+
+        <div class="col-sm-4">
+          <section id="projects">
+            <div class="container">
+              <div class="row">
+                <div class="<?php echo roots_main_class(); ?>">
+                  <h1>contact</h1>
+
+                    <nav>
+                      <?php
+                        if (has_nav_menu('projects_navigation')) :
+                          wp_nav_menu(array('theme_location' => 'projects_navigation', 'before' => '&nbsp;&nbsp;&lt;' ));
+                        endif;
+                      ?>
+                    </nav>
+
+                </div>
+              </div>
+            </div>
+          </section> <!-- websites -->
+        </div>  
+        
+
+        <div class="col-sm-4">
+          <section id="websites">
+            <div class="container">
+              <div class="row">
+                <div class="<?php echo roots_main_class(); ?>">
+                  <h1>projects</h1>
 
                     <nav>
                       <?php
@@ -50,8 +78,8 @@
             </div>
           </section> <!-- websites -->
         </div>  
-        
-      </div>
+
+      </div> <!-- row -->
     <?php endwhile; ?>
   </div>
 </section> <!-- home-blurb -->
