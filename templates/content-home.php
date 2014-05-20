@@ -23,7 +23,7 @@
                     <nav>
                       <?php
                         if (has_nav_menu('contact_navigation')) :
-                          wp_nav_menu(array('theme_location' => 'contact_navigation', 'before' => '&nblt;&nblt;&gt;' ));
+                          wp_nav_menu(array('theme_location' => 'contact_navigation', 'before' => '&nbsp;&nbsp;&gt;' ));
                         endif;
                       ?>
                     </nav>
@@ -46,7 +46,7 @@
                     <nav>
                       <?php
                         if (has_nav_menu('projects_navigation')) :
-                          wp_nav_menu(array('theme_location' => 'projects_navigation', 'before' => '&nblt;&nblt;&gt;' ));
+                          wp_nav_menu(array('theme_location' => 'projects_navigation', 'before' => '&nbsp;&nbsp;&gt;' ));
                         endif;
                       ?>
                     </nav>
@@ -68,7 +68,7 @@
                     <nav>
                       <?php
                         if (has_nav_menu('website_navigation')) :
-                          wp_nav_menu(array('theme_location' => 'website_navigation', 'before' => '&nblt;&nblt;&gt;' ));
+                          wp_nav_menu(array('theme_location' => 'website_navigation', 'before' => '&nbsp;&nbsp;&gt;' ));
                         endif;
                       ?>
                     </nav>
