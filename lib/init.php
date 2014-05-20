@@ -11,7 +11,7 @@ function roots_setup() {
     'primary_navigation' => __('Primary Navigation', 'roots'),
     'website_navigation' => __('Website Navigation', 'roots'),
     'contact_navigation' => __('Contact Navigation', 'roots'),
-    'projects_navigation' => __('Projects Navigation', 'roots'),
+    'projects_navigation' => __('Projects Navigation', 'roots')
   ));
 
   // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)
