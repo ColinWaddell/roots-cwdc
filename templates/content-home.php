@@ -46,7 +46,7 @@
                     <nav>
                       <?php
                         if (has_nav_menu('projects_navigation')) :
-                          wp_nav_menu(array('theme_location' => 'projects_navigation', 'before' => '&nbsp;&nbsp;&lt;' ));
+                          wp_nav_menu(array('theme_location' => 'projects_navigation', 'before' => '&nbgt;&nbgt;&lt;' ));
                         endif;
                       ?>
                     </nav>
@@ -68,7 +68,7 @@
                     <nav>
                       <?php
                         if (has_nav_menu('website_navigation')) :
-                          wp_nav_menu(array('theme_location' => 'website_navigation', 'after' => '&nbsp;&nbsp;&lt;' ));
+                          wp_nav_menu(array('theme_location' => 'website_navigation', 'before' => '&nbgt;&nbgt;&lt;' ));
                         endif;
                       ?>
                     </nav>
