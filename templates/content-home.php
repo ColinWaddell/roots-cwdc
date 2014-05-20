@@ -12,7 +12,7 @@
       </div>
 
 
-      <div class="row">
+      <div class="row menus">
         <div class="col-sm-4">
           <section id="contact">
             <div class="container">
