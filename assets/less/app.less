@@ -218,7 +218,12 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    Media Queries
    ========================================================================== */
 
-@media (min-width: @screen-sm) { }
+@media (max-width: @screen-sm) { 
+  #link-bar{
+    float: none!important;
+    margin: 0 0 30px;
+  }
+}
 
 @media (min-width: @screen-md) { }
 
