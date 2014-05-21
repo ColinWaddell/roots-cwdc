@@ -66,7 +66,6 @@ body {
 .gallery-row { padding: 15px 0; }
 
 
-
 /* ==========================================================================
    Sections
    ========================================================================== */
@@ -89,7 +88,33 @@ body {
     text-transform: lowercase;
     margin-top: 0;
   }
+
+  h2:after{
+    display: inline-block;
+    width: .45em;
+    height: 0.7em;
+    background: #0FA0DB;
+    content: ' ';
+    margin-left: 0.17em;  
+    animation: blink 1.5s step-start 0s infinite;
+    -webkit-animation: blink 1.5s step-start 0s infinite;  
+    -moz-animation: blink 1.5s step-start 0s infinite;  
+  }
 }
+
+@keyframes blink {  
+  0% { background: #0FA0DB; }
+  50% { background: #C9E6F1; }
+  100% { background: #0FA0DB; }
+}
+@-webkit-keyframes blink {
+  0% { background: #0FA0DB; }
+  50% { background: #C9E6F1; }
+  100% { background: #0FA0DB; }
+}
+
+
+
 
 #home-blurb{
   padding-bottom: 40px;
@@ -113,7 +138,7 @@ body {
 
   nav{
     ul{
-      padding-left: 15px;
+      padding-left: 10px;
       li{
         display: block;
       }

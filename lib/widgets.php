@@ -22,6 +22,45 @@ function roots_widgets_init() {
     'after_title'   => '</h3>',
   ));
 
+
+  register_sidebar(array(
+    'name'          => __('Projects', 'roots'),
+    'id'            => 'sidebar-projects',
+    'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+
+  register_sidebar(array(
+    'name'          => __('Contacts', 'roots'),
+    'id'            => 'sidebar-contacts',
+    'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+
+  register_sidebar(array(
+    'name'          => __('Websites', 'roots'),
+    'id'            => 'sidebar-websites',
+    'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+
+  register_sidebar(array(
+    'name'          => __('First', 'roots'),
+    'id'            => 'sidebar-first',
+    'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+
+
+
   // Widgets
   register_widget('Roots_Vcard_Widget');
 }

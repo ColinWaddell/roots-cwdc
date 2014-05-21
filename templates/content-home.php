@@ -13,7 +13,22 @@
 
 
       <div class="row menus">
-        <div class="col-sm-4">
+        <div class="col-sm-3">
+          <section id="contact">
+            <div class="container">
+              <div class="row">
+                <div class="<?php echo roots_main_class(); ?>">
+
+                    <?php dynamic_sidebar('sidebar-first'); ?>
+
+                </div>
+              </div>
+            </div>
+          </section> <!-- websites -->
+        </div>   
+      
+
+        <div class="col-sm-3">
           <section id="contact">
             <div class="container">
               <div class="row">
@@ -36,7 +51,7 @@
 
 
 
-        <div class="col-sm-4">
+        <div class="col-sm-3">
           <section id="projects">
             <div class="container">
               <div class="row">
@@ -58,7 +73,7 @@
         </div>  
         
 
-        <div class="col-sm-4">
+        <div class="col-sm-3">
           <section id="websites">
             <div class="container">
               <div class="row">
