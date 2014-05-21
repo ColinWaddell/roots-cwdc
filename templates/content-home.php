@@ -8,7 +8,7 @@
       <div class="row">
         <div class="col-sm-6">
           <?php the_content(); ?>
-        </div>
+       </div>
       </div>
 
 
