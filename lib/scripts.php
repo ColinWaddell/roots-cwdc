@@ -11,7 +11,7 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function roots_scripts() {
-  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '779b0f3c7bc54f8093805f276f8f2e93');
+  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, 'a027a73a1ef4b9b48da848a8d72aa37b');
   wp_enqueue_style('nv_d3_css', get_template_directory_uri() . '/assets/js/plugins/github-calendar/css/nv.d3.css');
   wp_enqueue_style('gitgraph_css', get_template_directory_uri() . '/assets/js/plugins/github-calendar/css/github-calendar.css');
 
