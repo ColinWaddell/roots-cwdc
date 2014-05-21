@@ -17,11 +17,7 @@
           <section id="contact">
             <div class="container">
               <div class="row">
-                <div class="<?php echo roots_main_class(); ?>">
-
-                    <?php dynamic_sidebar('sidebar-first'); ?>
-
-                </div>
+                <img src="<?php echo site_url('/assets/img/colin_waddell.png'); ?>" alt="">
               </div>
             </div>
           </section> <!-- websites -->
