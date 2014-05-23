@@ -15,7 +15,7 @@
             </a>
           </div>
           <div class="col-xs-4">
-            <a class="link-icon" href="https://www.linkedin.com/profile/view?id=207368864" data-toggle="tooltip" title="facebook">
+            <a class="link-icon" href="https://www.linkedin.com/profile/view?id=207368864" data-toggle="tooltip" title="linked in">
               <img src="<?php echo site_url('/assets/img/linkedin.svg'); ?>" alt="">
             </a>
           </div>
