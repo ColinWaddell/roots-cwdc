@@ -7,6 +7,11 @@
     "type": "git",
     "url": "git://github.com/roots/roots.git"
   },
+
+  "dependencies" :{ 
+    "FlowupLabels.js" : "http://github.com/ENFOS/FlowupLabels.js.git#master"
+  },
+
   "bugs": {
     "url" : "https://github.com/roots/roots/issues"
   },

@@ -39,6 +39,8 @@
                       ?>
                     </nav>
 
+                    <?php dynamic_sidebar('sidebar-contacts'); ?>
+
                 </div>
               </div>
             </div>
