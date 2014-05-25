@@ -44,7 +44,7 @@
 .FlowupLabels .fl_wrap.focused .fl_label,.FlowupLabels .fl_wrap.populated .fl_label
 {
   top:0;
-  font-size:20px;
+  font-size:16px;
   color:#555;
 }
 
@@ -71,7 +71,7 @@
 .FlowupLabels .fl_wrap_ta.focused_ta .fl_label,.FlowupLabels .fl_wrap_ta.populated_ta .fl_label
 {
   top:0;
-  font-size:20px;
+  font-size:16px;
   color:#555;
   line-height:22px;
 
