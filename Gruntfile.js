@@ -42,6 +42,7 @@ module.exports = function(grunt) {
             'assets/js/plugins/bootstrap/scrollspy.js',
             'assets/js/plugins/bootstrap/tab.js',
             'assets/js/plugins/bootstrap/affix.js',
+            'assets/js/plugins/jquery.FlowupLabels.js',
             'assets/js/plugins/*.js',
             'assets/js/_*.js'
           ]

@@ -175,6 +175,67 @@ body {
 }
 
 
+/* ==========================================================================
+   Contact form 7
+   ========================================================================== */
+
+.wpcf7{
+  input, textarea{
+    //width: 100%;
+  }
+
+  input:focus, textarea:focus{
+    outline: none;
+    border:none !important;
+    box-shadow:none !important;    
+  }
+
+}
+
+.widget_custom_cf7{
+  h3{
+    display: none;
+  }
+
+  .screen-reader-response, .wpcf7-not-valid-tip{
+    display: none;
+  }
+
+  input[type="submit"]{
+    background: #EFEFEF;
+    border: 1px solid #AAA;
+    width: 100px;
+    line-height: 22px;
+  }
+  
+  input[type="submit"]:focus{
+    border: 1px solid black !important;
+  }
+
+
+}
+
+.FlowupLabels .fl_input.wpcf7-not-valid{
+  border-bottom: 1px solid #D80C0C;
+}
+
+.wpcf7-validation-errors{
+  color: #D80C0C;
+}
+
+.wpcf7-mail-sent-ok{
+  color: #E2AC67;
+}
+
+#wpcf7_message{
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow-y: hidden;
+  margin-top: -5px;
+}
 
 /* ==========================================================================
    Sidebar

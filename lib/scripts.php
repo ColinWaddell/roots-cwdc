@@ -11,7 +11,8 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function roots_scripts() {
-  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, 'aaf536293e97a5768ea8f37e67b8081d');
+  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, 'b859fc78f82994cb323fca4456850c07');
+  wp_enqueue_style('flow_up_labels', get_template_directory_uri() . '/assets/css/jquery.FlowupLabels.css', false);
 
   // jQuery is loaded using the same method from HTML5 Boilerplate:
   // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
@@ -27,12 +28,16 @@ function roots_scripts() {
   }
 
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, null, false);
-  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', false, 'fb5ff4138270deef059e0311427e8d46', true);
+  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', false, '51a802c4ac040cf2de5c86acb9420464', true);
   wp_register_script('git-graphs', get_template_directory_uri() . '/assets/js/plugins/github-calendar/js/github-graphs-repos.js', false, false, false);
   wp_register_script('nvd3-libs', get_template_directory_uri() . '/assets/js/plugins/github-calendar/js/nvd3.libs.js', false, false, false);
+  wp_register_script('flow-up-labels', get_template_directory_uri() . '/assets/js/plugins/jquery.FlowupLabels.js', false, false, false);
+  wp_register_script('autogrow-textarea', get_template_directory_uri() . '/assets/js/plugins/jquery.autogrow-textarea.js', false, false, false);
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('roots_scripts');
+  wp_enqueue_script('flow-up-labels');
+  wp_enqueue_script('autogrow-textarea');
 }
 add_action('wp_enqueue_scripts', 'roots_scripts', 100);
 
@@ -67,3 +72,11 @@ function roots_google_analytics() { ?>
 if (GOOGLE_ANALYTICS_ID && !current_user_can('manage_options')) {
   add_action('wp_footer', 'roots_google_analytics', 20);
 }
+
+
+
+
+/* Removes the Contact Form 7 scripts and styles from all pages */
+//remove_action( 'wp_enqueue_scripts', 'wpcf7_enqueue_scripts' ); // Prevents the scripts from loading on all pages
+remove_action( 'wp_enqueue_scripts', 'wpcf7_enqueue_styles' ); // Prevents the styles from loading on all pages
+

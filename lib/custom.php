@@ -93,3 +93,5 @@ function external_url_save_postdata( $post_id ) {
   update_post_meta( $post_id, '_external_url', $mydata );
 }
 add_action( 'save_post', 'external_url_save_postdata' );
+
+
