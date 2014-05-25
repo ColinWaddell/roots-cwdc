@@ -11,7 +11,7 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function roots_scripts() {
-  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '940abe53bd267a6a30ec5bb77b0610fc');
+  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '1421b7e2f9261c6549c3377c4ceb1255');
   wp_enqueue_style('flow_up_labels', get_template_directory_uri() . '/assets/css/jquery.FlowupLabels.css', false);
 
   // jQuery is loaded using the same method from HTML5 Boilerplate:

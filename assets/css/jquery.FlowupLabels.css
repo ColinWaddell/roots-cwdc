@@ -24,7 +24,7 @@
 {
   background:none;
   border:none;
-  border-bottom:1px solid #555;
+  border-bottom:2px solid #333;
   border-radius:0;
   font-size:20px;
   line-height:22px;
@@ -45,7 +45,7 @@
 {
   top:0;
   font-size:16px;
-  color:#555;
+  color:#333;
 }
 
 .FlowupLabels .fl_wrap.focused .fl_label
@@ -68,17 +68,33 @@
 {
 }
 
+
+.FlowupLabels .fl_textarea{
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #333;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow-y: hidden;
+  margin-top: -15px;
+  font-size: 20px;
+  padding: 0 0 0 5px;
+}
+
+
 .FlowupLabels .fl_wrap_ta.focused_ta .fl_label,.FlowupLabels .fl_wrap_ta.populated_ta .fl_label
 {
   top:0;
   font-size:16px;
-  color:#555;
+  color:#333;
   line-height:22px;
 
 }
 
-.FlowupLabels .fl_wrap.focused_ta .fl_textarea
+.FlowupLabels .fl_wrap_ta.focused_ta .fl_textarea,
+.FlowupLabels .fl_wrap_ta.populated_ta .fl_textarea
 {
+  margin-top: -5px;
 }
 
 .FlowupLabels .fl_textarea
