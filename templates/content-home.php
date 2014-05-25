@@ -20,33 +20,8 @@
                 <img src="<?php echo site_url('/assets/img/colin_waddell.png'); ?>" alt="">
               </div>
             </div>
-          </section> <!-- websites -->
+          </section> <!-- ma face -->
         </div>   
-      
-
-        <div class="col-sm-3">
-          <section id="contact">
-            <div class="container">
-              <div class="row">
-                <div class="<?php echo roots_main_class(); ?>">
-                  <h1>contact</h1>
-
-                    <nav>
-                      <?php
-                        if (has_nav_menu('contact_navigation')) :
-                          wp_nav_menu(array('theme_location' => 'contact_navigation', 'before' => '&gt;&nbsp;&nbsp;' ));
-                        endif;
-                      ?>
-                    </nav>
-
-                    <?php dynamic_sidebar('sidebar-contacts'); ?>
-
-                </div>
-              </div>
-            </div>
-          </section> <!-- websites -->
-        </div>   
-
 
 
         <div class="col-sm-3">
@@ -67,7 +42,7 @@
                 </div>
               </div>
             </div>
-          </section> <!-- websites -->
+          </section> <!-- project -->
         </div>  
         
 
@@ -91,6 +66,31 @@
             </div>
           </section> <!-- websites -->
         </div>  
+
+
+        <div class="col-sm-3">
+          <section id="contact">
+            <div class="container">
+              <div class="row">
+                <div class="<?php echo roots_main_class(); ?>">
+                  <h1>contact</h1>
+
+                    <nav>
+                      <?php
+                        if (has_nav_menu('contact_navigation')) :
+                          wp_nav_menu(array('theme_location' => 'contact_navigation', 'before' => '&gt;&nbsp;&nbsp;' ));
+                        endif;
+                      ?>
+                    </nav>
+
+                    <?php dynamic_sidebar('sidebar-contacts'); ?>
+
+                </div>
+              </div>
+            </div>
+          </section> <!-- contact -->
+        </div>   
+
 
       </div> <!-- row -->
     <?php endwhile; ?>
