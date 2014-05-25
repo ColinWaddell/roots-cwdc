@@ -1,0 +1,84 @@
+.FlowupLabels .fl_wrap
+{
+  width:100%;
+  height:46px;
+  display:block;
+  position:relative;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  margin:12px auto;
+}
+
+.FlowupLabels .fl_label
+{
+  top:15px;
+  left:5px;
+  z-index:3;
+  -webkit-transition:all .05s linear;
+  -moz-transition:all .05s linear;
+  -transition:all .05s linear;
+}
+
+.FlowupLabels .fl_input
+{
+  background:none;
+  border:none;
+  border-bottom:1px solid #555;
+  border-radius:0;
+  font-size:16px;
+  line-height:22px;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  z-index:2;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  padding:20px 0 0 5px;
+}
+
+.FlowupLabels .fl_wrap.focused .fl_label,.FlowupLabels .fl_wrap.populated .fl_label
+{
+  top:0;
+  font-size:16px;
+  color:#555;
+}
+
+.FlowupLabels .fl_wrap.focused .fl_label
+{
+  color: #333;
+}
+
+
+
+/* ColinWaddell.com Code to handle Textareas */
+.FlowupLabels .fl_wrap_ta.focused_ta{
+  -webkit-transition:all .05s linear;
+  -moz-transition:all .05s linear;
+  -transition:all .05s linear;
+  overflow-y:hidden;
+}
+
+.FlowupLabels .fl_wrap.focused_ta
+.FlowupLabels .fl_wrap.populated_ta
+{
+}
+
+.FlowupLabels .fl_wrap_ta.focused_ta .fl_label,.FlowupLabels .fl_wrap_ta.populated_ta .fl_label
+{
+  top:0;
+  font-size:16px;
+  color:#555;
+}
+
+.FlowupLabels .fl_wrap.focused_ta .fl_textarea
+{
+}
+
+.FlowupLabels .fl_textarea
+{
+}
