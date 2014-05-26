@@ -12,6 +12,7 @@
 
 .FlowupLabels .fl_label
 {
+  font-weight: 100;
   top:15px;
   left:5px;
   z-index:3;
@@ -70,6 +71,7 @@
 
 
 .FlowupLabels .fl_textarea{
+  font-weight: 100;
   background: transparent;
   border: 0;
   border-bottom: 2px solid #333;
@@ -79,6 +81,7 @@
   margin-top: -15px;
   font-size: 20px;
   padding: 0 0 0 5px;
+  line-height:22px;
 }
 
 
@@ -94,7 +97,7 @@
 .FlowupLabels .fl_wrap_ta.focused_ta .fl_textarea,
 .FlowupLabels .fl_wrap_ta.populated_ta .fl_textarea
 {
-  margin-top: -5px;
+  margin-top: -3px;
   margin-bottom: 20px;
 }
 
