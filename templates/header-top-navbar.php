@@ -3,8 +3,8 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <h1><?php bloginfo('name'); ?></h1>
-        <h2><?php bloginfo('description'); ?></h2>
+        <h1><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+        <h2><a href="<?php echo site_url(); ?>"><?php bloginfo('description'); ?></a></h2>
       </div>
       <div class="col-sm-4 pull-right" id="link-bar">
         <div class="row">
