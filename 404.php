@@ -1,12 +1,9 @@
 <?php get_template_part('templates/page', 'header'); ?>
 
-<div class="alert alert-warning">
-  <?php _e('Sorry, but the page you were trying to view does not exist.', 'roots'); ?>
-</div>
+<h3>I recently moved everything on my site, sorry</h3>
 
-<p><?php _e('It looks like this was the result of either:', 'roots'); ?></p>
-<ul>
-  <li><?php _e('a mistyped address', 'roots'); ?></li>
-  <li><?php _e('an out-of-date link', 'roots'); ?></li>
-</ul>
+<p>
+  <a href="<?php echo site_url();?>" class="btn btn-primary btn-lg active" role="button">Head to my Homepage, everything's there now &rarr;</a>
+</p>
+
 
