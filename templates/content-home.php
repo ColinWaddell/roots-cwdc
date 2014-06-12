@@ -17,7 +17,7 @@
           <section id="contact">
             <div class="container">
               <div class="row">
-                <img src="<?php echo site_url('/assets/img/colin_waddell.png'); ?>" alt="">
+                <img src="<?php echo site_url('/assets/img/colin_waddell.png'); ?>" alt="Colin Waddell">
               </div>
             </div>
           </section> <!-- ma face -->
